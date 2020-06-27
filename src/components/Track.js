@@ -21,7 +21,7 @@ const Track = props => {
           </p>
           <Link
             to={`tracks/${track.track_id}/lyrics`}
-            className="btn btn-dark brt-block"
+            className="btn btn-primary brt-block"
           >
             <i className="fa fa-chevron-right" aria-hidden="true" /> Lyricize
           </Link>
