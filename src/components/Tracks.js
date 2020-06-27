@@ -5,7 +5,7 @@ import Track from "./Track";
 const Tracks = () => {
   const [state] = useContext(Context);
   const { tracks, heading } = state;
-
+  console.log(tracks);
   if (tracks === undefined || tracks.length === 0) return <Spinner />;
   else {
     return (
