@@ -20,7 +20,7 @@ const Track = props => {
             : {track.album_name}
           </p>
           <Link
-            to={`lyrics/tracks/${track.track_id}`}
+            to={`tracks/${track.track_id}/lyrics`}
             className="btn btn-dark brt-block"
           >
             <i className="fa fa-chevron-right" aria-hidden="true" /> Lyricize
