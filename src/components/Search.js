@@ -30,6 +30,7 @@ const Search = () => {
 
   const onChange = e => {
     setUserInput(e.target.value);
+    handleUserInput(e);
   };
   return (
     <div className="card card-body mb-4 p-4">
@@ -41,6 +42,7 @@ const Search = () => {
         <div className="form-group">
           <input
             type="text"
+            id="search"
             className="form-control form-control-lg"
             placeholder="Track name..."
             name="userInput"
