@@ -1,20 +1,23 @@
 import React from "react";
-import Navbar from "./components/layout/Navbar";
-import Home from "./components/layout/Home";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import { Provider } from "./context";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 function App() {
   return (
-    <Router>
-      <>
-        <Navbar />
-        <div className="app">
-          <Switch>
-            <Route exact path="/" component={Home} />
-          </Switch>
-        </div>
-      </>
-    </Router>
+    <Provider>
+      <Router>
+        <>
+          <Navbar />
+          <div className="app">
+            <Switch>
+              <Route exact path="/" component={Home} />
+            </Switch>
+          </div>
+        </>
+      </Router>
+    </Provider>
   );
 }
 
