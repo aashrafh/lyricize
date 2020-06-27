@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Context } from "./../../src/context";
 import axios from "axios";
 const Search = () => {
-  const [state, setState] = useContext(Context);
+  const [setState] = useContext(Context);
   const [userInput, setUserInput] = useState("");
   const [trackName, setTrackName] = useState("");
 
