@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Lyrics from "./components/Lyrics";
 import { Provider } from "./context";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
 function App() {
   return (
     <Provider>

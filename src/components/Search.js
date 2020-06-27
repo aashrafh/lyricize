@@ -50,8 +50,8 @@ const Search = () => {
             onChange={onChange}
           />
         </div>
-        <button className="btn btn-primary btn-lg btn-block mb-5" type="submit">
-          Lyricize
+        <button className="btn btn-primary btn-lg btn-block" type="submit">
+          <i className="fa fa-pencil" aria-hidden="true" /> Lyricize
         </button>
       </form>
     </div>
