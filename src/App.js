@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <Provider>
-      <Router>
+      <Router basename="https://aashrafh.github.io/lyricize">
         <>
           <Navbar />
           <div className="container">
